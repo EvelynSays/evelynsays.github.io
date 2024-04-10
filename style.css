@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: charcoal;
+}
+
+table {
+    border-collapse: collapse;
+    width: fit-content;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    border-radius: 50%;
+}
+
+th {
+    vertical-align: top;
+}
+ul {
+    list-style-type: none;
+}
