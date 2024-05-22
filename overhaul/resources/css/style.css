@@ -107,10 +107,6 @@ ul li {
     font-size: 15px;
 }
 
-.active, .collapsible:hover {
-    background-color: #2b2b2b;
-}
-  
 .content {
     display: none;
     overflow: hidden;
