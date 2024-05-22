@@ -10,6 +10,10 @@
     src: url(../fonts/Evelynfont.ttf);
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -41,7 +45,12 @@ h1 {
 }
 
 h2 {
+    font-family: 'Fanwood Text';
     text-align: center;
+}
+
+p {
+    font-family: 'League Spartan';
 }
 
 ul {
@@ -104,7 +113,7 @@ ul li {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .content {
