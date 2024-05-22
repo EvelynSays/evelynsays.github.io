@@ -12,3 +12,13 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+var groupedProjects = document.getElementsByClassName("grouped-project");
+for (i = 0; i < groupedProjects.length; i++) {
+  groupedProjects[i].addEventListener("mouseleave", function() {
+    var content = this.querySelector(".content");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    }
+  });
+}

@@ -83,18 +83,18 @@ ul li {
 #grouped-projects-container {
     display: flex;
     justify-content: space-around;
-    width: 100%; /* Adjust as needed */
+    width: 100%;
 }
 
 .grouped-project {
-    flex: 1 0 20%; /* Adjust as needed */
+    flex: 1 0 20%;
+    position: relative;
 }
 
 .grouped-project ul li {
     display: block;
     margin: 0.5vh;
 }
-
 
 .collapsible {
     background-color: #000000;
@@ -116,12 +116,20 @@ ul li {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    position: absolute;
+    width: 100%;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    z-index: 1;
   }
 
 /* Skills section */
 #skills {
     margin: 3vh;
 }
+
 #skills ul{
     display: flex;
     justify-content: space-around;
