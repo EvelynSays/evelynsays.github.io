@@ -9,6 +9,10 @@ body {
     font-family: 'League Spartan';
 }
 
+#header a {
+    color: lightskyblue;
+}
+
 h1 {
     color: whitesmoke;
     text-align: center;
