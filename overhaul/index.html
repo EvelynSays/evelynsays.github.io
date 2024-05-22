@@ -25,8 +25,12 @@
         <main>
             <section id="about">
                 <img src="resources/images/JoannaEvans.jpeg" alt="Joanna Evans">
-                <h2>About Me</h2>
-                <p>Hi, I'm Joanna! I'm a web developer based in New York City. I have a passion for coding and love to create websites and applications that are both beautiful and functional. I have experience with HTML, CSS, JavaScript, and more. I'm always looking to learn new technologies and improve my skills.</p>
+                <div id="info">
+                    <h2>About Me</h2>
+                    <br>
+                    <p>Hi, I'm Joanna! I'm a web developer based in New York City. I have a passion for coding and love to create websites and applications that are both beautiful and functional. I have experience with HTML, CSS, JavaScript, and more. I'm always looking to learn new technologies and improve my skills.</p>
+                </div>    
+                </section>
             </section>
 
             <section id="projects">
@@ -38,34 +42,36 @@
                         <li><a href="#">Project 3</a></li>
                     </ul>
                 </div>
-                <div class="grouped-project">
-                    <button type="button" class="collapsible">Category 1</button>
-                    <div class="content">
-                        <ul>
-                            <li><a href="#">Project 1</a></li>
-                            <li><a href="#">Project 2</a></li>
-                            <li><a href="#">Project 3</a></li>
-                        </ul>
+                <div id="grouped-projects-container">
+                    <div class="grouped-project">
+                        <button type="button" class="collapsible">Category 1</button>
+                        <div class="content">
+                            <ul>
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="grouped-project">
-                    <button type="button" class="collapsible">Category 2</button>
-                    <div class="content">
-                        <ul>
-                            <li><a href="#">Project 1</a></li>
-                            <li><a href="#">Project 2</a></li>
-                            <li><a href="#">Project 3</a></li>
-                        </ul>
+                    <div class="grouped-project">
+                        <button type="button" class="collapsible">Category 2</button>
+                        <div class="content">
+                            <ul>
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="grouped-project">   
-                    <button type="button" class="collapsible">Category 3</button>
-                    <div class="content">
-                        <ul>
-                            <li><a href="#">Project 1</a></li>
-                            <li><a href="#">Project 2</a></li>
-                            <li><a href="#">Project 3</a></li>
-                        </ul>
+                    <div class="grouped-project">   
+                        <button type="button" class="collapsible">Category 3</button>
+                        <div class="content">
+                            <ul>
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -77,7 +83,7 @@
                     <li><img src="resources/images/icons/css.png" alt="CSS"></li>
                     <li><img src="resources/images/icons/javascript.png" alt="JavaScript"></li>
                     <li><img src="resources/images/icons/python.png" alt="Python"></li>
-                    <li><img src="resources/images/icons/c-sharp.png" alt="C#"></li>
+                    <li><img class="greyscale" src="resources/images/icons/c-sharp.png" alt="C#"></li>
                     <li><img src="resources/images/icons/nodejs.png" alt="Node.js"></li>
                     <li><img src="resources/images/icons/git.png" alt="Git"></li>
                 </ul>

@@ -1,3 +1,4 @@
+/* General style rules & fonts */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,102 @@
     src: url(../fonts/Evelynfont.ttf);
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #d4c3d0;
+    color: #000000;
+    text-align: center;
+}
+
+main {
+    height: 80vh;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #d4c3d0;
+}
+
 h1 {
     font-family: 'Evelynfont';
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* About section */
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#about h2 {
+    text-align: right;
+}
+
+#about img {
+    border: #000000 2px solid;
+    border-radius: 50%;
+    height: 200px;
+    width: auto;
+}
+
+/* Projects section */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grouped-projects-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Adjust as needed */
+}
+
+.grouped-project {
+    flex: 1 0 20%; /* Adjust as needed */
+}
+
+/* Skills section */
+#skills ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#skills img {
+    height: 64px;
+    width: 64px;
+}
+
+.greyscale {
+    filter: grayscale(100%) contrast(200%);
+}
+
+/* Contact section */
+
+footer {
+    height: 10vh;
+}
+
+footer img {
+    height: 24px;
+    width: auto
 }
