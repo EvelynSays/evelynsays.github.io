@@ -94,9 +94,7 @@ header {
     align-items: center;
     background-color: #000000;
     color: #d4c3d0;
-    padding-left: 2vh;
     justify-content: space-between;
-    padding-bottom: 2vh;
 }
 
 header a, header a:visited {
@@ -107,6 +105,30 @@ header a, header a:visited {
 header a:hover {
     color: #f1f1f1;
     font-weight: bold;
+}
+
+header img {
+    height: 30px;
+    width: auto;
+    filter: invert(100%);
+    padding: 2px;
+}
+
+header img:hover {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(45deg);
+}
+
+nav li:not(:last-child) a::after {
+    content: " - ";
+    margin: 0 10px;
+}
+
+nav li:first-child a::before {
+    content: "[ ";
+}
+
+nav li:last-child a::after {
+    content: " ]";
 }
 
 /* About section */
@@ -214,15 +236,6 @@ footer {
     flex-direction: column;
     justify-content: stretch;
     margin-top: 8vh;
-}
-
-footer img {
-    height: 24px;
-    width: auto;
-}
-
-footer img:hover {
-    filter: invert(100%);
 }
 
 #icon-links a{
