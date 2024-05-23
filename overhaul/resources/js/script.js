@@ -7,7 +7,9 @@ for (i = 0; i < coll.length; i++) {
         var button = this.getElementsByClassName("collapsible")[0];
         var content = this.getElementsByClassName("content")[0];
         button.classList.add("active");
-        button.style.backgroundColor = "#2b2b2b";
+        if (window.innerWidth > 480) { // Add this line
+            button.style.backgroundColor = "#2b2b2b";
+        } // And this line
         content.style.display = "block";
     });
 
@@ -15,10 +17,11 @@ for (i = 0; i < coll.length; i++) {
         var button = this.getElementsByClassName("collapsible")[0];
         var content = this.getElementsByClassName("content")[0];
         content.style.display = "none";
-        button.style.backgroundColor = "#000000";
+        if (window.innerWidth > 480) { // Add this line
+            button.style.backgroundColor = "#000000";
+        } // And this line
     });
 }
-
 // Animated page elements in response to nav links.
 var linkToAnimateElementMap = {
   'about-link': 'about-animate',
@@ -43,7 +46,10 @@ for (var linkId in linkToAnimateElementMap) {
 }
 
 // Offset main by height of header.
-window.onload = function() {
+function adjustPadding() {
   var headerHeight = document.querySelector('header').offsetHeight;
   document.querySelector('main').style.paddingTop = headerHeight + 'px';
 }
+
+window.onload = adjustPadding;
+window.onresize = adjustPadding;

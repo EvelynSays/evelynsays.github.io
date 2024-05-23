@@ -257,3 +257,77 @@ footer {
 #icon-links a{
     color: #444444;
 }
+
+/* Landscape Tablet */
+@media only screen and (max-width: 1400px) {
+    
+}
+
+/* Portrait tablet styling */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Mobile styling */
+@media only screen and (max-width: 480px) {
+    /* Header Section */
+    h1 {
+        font-size: 2em;
+    
+    }
+
+    nav ul {
+        margin-left: 0;
+    }
+
+    nav li:not(:last-child) a::after {
+        margin: 0px;
+    }
+
+    /* About Section */
+    #about {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #about p {
+        width: auto;
+        margin: auto;
+        margin-bottom: 10px;
+    }  
+
+    /* Projects Section */
+
+    .collapsible {
+        pointer-events: none;
+     }
+
+    .content {
+        display: block !important;
+        position: static;
+    }
+    
+    #grouped-projects-container {
+        flex-direction: column;
+    }
+
+    .grouped-project {
+        margin-bottom: 10px;
+    }
+
+      /* Skills Section */
+
+    #skills, #projects {
+        padding: 10px;
+        margin: 1vh;
+    }
+    #skills ul {
+        flex-wrap: wrap;
+    }
+    
+    #skills ul li {
+        margin-bottom: 10px;
+    }
+
+}
