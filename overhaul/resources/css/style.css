@@ -10,6 +10,16 @@
     src: url(../fonts/Evelynfont.ttf);
 }
 
+.edit {
+    font-style: bold;
+    color: red;
+}
+
+.bigger {
+    font-size: 2em;
+
+}
+
 html {
     font-size: 16px;
 }
@@ -21,19 +31,17 @@ body {
     background-color: #d4c3d0;
     color: #000000;
     text-align: center;
+    justify-content: space-between;
 }
 
 main {
-    height: 100vh;
+    height: 75vh;
 }
 
-header {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000000;
-    color: #d4c3d0;
+
+nav {
+    align-self: flex-end;
+    margin-bottom: 1vh;
 }
 
 #about, #projects, #skills, #contact, #grouped-projects-container {
@@ -42,11 +50,13 @@ header {
 
 h1 {
     font-family: 'Evelynfont';
+    font-size: 4em;
 }
 
 h2 {
     font-family: 'Fanwood Text';
     text-align: center;
+    font-size: 3em;
 }
 
 p {
@@ -62,14 +72,38 @@ ul li {
     margin-right: 10px;
 }
 
+/* Header Section */
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #d4c3d0;
+    padding: 3vh;
+}
+
+header a, header a:visited {
+    color: #d6fbb8;
+}
+
+header a:hover {
+    color: #f1f1f1;
+}
+
 /* About section */
 #about {
     margin: 3vh;
+    margin-left: 10vh;
     display: flex;
     flex-direction: row;
+    width: 50vw;
 }
 
-#about h2, #about p {
+
+#about p {
+    margin-top: 8vh;
     margin-left: 3vh;
     text-align: left;
 }
@@ -140,8 +174,8 @@ ul li {
 }
 
 #skills img {
-    height: 64px;
-    width: 64px;
+    height: 48px;
+    width: auto;
 }
 
 .greyscale {
@@ -151,11 +185,18 @@ ul li {
 /* Contact section */
 
 footer {
-    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     height: 10vh;
+    margin-top: 8vh;
 }
 
 footer img {
     height: 24px;
-    width: auto
+    width: auto;
+}
+
+footer img:hover {
+    filter: invert(100%);
 }
