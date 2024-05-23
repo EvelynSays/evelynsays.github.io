@@ -38,7 +38,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #d4c3d0;
+    background-color: #96dfc6;
     color: #000000;
     text-align: center;
     justify-content: space-between;
@@ -58,7 +58,7 @@ h1, h2 {
 }
 
 h1 {
-    font-family: 'Evelynfont';
+    font-family: 'Fanwood Text';
     font-size: 4em;
 }
 
@@ -93,8 +93,15 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: #000000;
-    color: #d4c3d0;
+    box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #96dfc6;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;    
 }
 
 header a, header a:visited {
@@ -141,10 +148,11 @@ nav li:last-child a::after {
 }
 
 #about p {
-    margin-top: 8vh;
+    margin-top: 4vh;
     margin-left: 3vh;
-    text-align: left;
+    text-align: center;
     width: 50vw;
+    font-size: 1.5em;
 }
 
 #profile-picture {
@@ -161,6 +169,11 @@ nav li:last-child a::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#projects a, #projects a:visited{
+    color: #000000;
+
 }
 
 #grouped-projects-container {
@@ -181,7 +194,7 @@ nav li:last-child a::after {
 
 .collapsible {
     background-color: #000000;
-    color: #d4c3d0;
+    color: #96dfc6;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -206,7 +219,7 @@ nav li:last-child a::after {
 }
 
 /* Skills section */
-#skills {
+#skills, #projects {
     margin: 3vh;
     background-color: rgba(240, 240, 240, 0.3);
     border-radius: 10px;

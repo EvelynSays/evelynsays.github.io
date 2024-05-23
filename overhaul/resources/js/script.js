@@ -42,3 +42,9 @@ for (var linkId in linkToAnimateElementMap) {
     };
   })(animateElement));
 }
+
+// Offset main by height of header.
+window.onload = function() {
+  var headerHeight = document.querySelector('header').offsetHeight;
+  document.querySelector('main').style.paddingTop = headerHeight + 'px';
+}
