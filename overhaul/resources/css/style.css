@@ -10,8 +10,18 @@
     src: url(../fonts/Evelynfont.ttf);
 }
 
+.blink {
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .edit {
-    font-style: bold;
+    font-weight: bold;
     color: red;
 }
 
@@ -34,14 +44,8 @@ body {
     justify-content: space-between;
 }
 
-main {
-    height: 75vh;
-}
-
-
-nav {
-    align-self: flex-end;
-    margin-bottom: 1vh;
+nav ul{
+    margin-left: 3vh;
 }
 
 #about, #projects, #skills, #contact, #grouped-projects-container {
@@ -72,24 +76,32 @@ ul li {
     margin-right: 10px;
 }
 
+a {
+    text-decoration: none;
+    font-family: 'League Spartan';
+}
+
 /* Header Section */
 
 header {
-    height: 10vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     background-color: #000000;
     color: #d4c3d0;
-    padding: 3vh;
+    padding-left: 2vh;
+    justify-content: space-between;
+    padding-bottom: 2vh;
 }
 
 header a, header a:visited {
     color: #d6fbb8;
+    font-size: 1.5em;
 }
 
 header a:hover {
     color: #f1f1f1;
+    font-weight: bold;
 }
 
 /* About section */
@@ -98,21 +110,22 @@ header a:hover {
     margin-left: 10vh;
     display: flex;
     flex-direction: row;
-    width: 50vw;
+    justify-content: center;
 }
-
 
 #about p {
     margin-top: 8vh;
     margin-left: 3vh;
     text-align: left;
+    width: 50vw;
 }
 
-#about img {
-    border: #000000 2px solid;
+#profile-picture {
+    box-shadow: 0 0 10px 5px #000000;
     border-radius: 50%;
     height: 200px;
-    width: auto;
+    width: 200px;
+    margin-right: 2vw;
 }
 
 /* Projects section */
@@ -160,6 +173,9 @@ header a:hover {
     overflow: hidden;
     background-color: #f1f1f1;
     z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 /* Skills section */
@@ -188,7 +204,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    height: 10vh;
     margin-top: 8vh;
 }
 
