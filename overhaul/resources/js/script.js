@@ -1,27 +1,3 @@
-// Collapsible project sections.
-var coll = document.getElementsByClassName("grouped-project");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("mouseover", function() {
-        var button = this.getElementsByClassName("collapsible")[0];
-        var content = this.getElementsByClassName("content")[0];
-        button.classList.add("active");
-        if (window.innerWidth > 480) { // Add this line
-            button.style.backgroundColor = "#2b2b2b";
-        } // And this line
-        content.style.display = "block";
-    });
-
-    coll[i].addEventListener("mouseleave", function() {
-        var button = this.getElementsByClassName("collapsible")[0];
-        var content = this.getElementsByClassName("content")[0];
-        content.style.display = "none";
-        if (window.innerWidth > 480) { // Add this line
-            button.style.backgroundColor = "#000000";
-        } // And this line
-    });
-}
 // Animated page elements in response to nav links.
 var linkToAnimateElementMap = {
   'about-link': 'about-animate',

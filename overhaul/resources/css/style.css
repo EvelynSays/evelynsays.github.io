@@ -189,36 +189,40 @@ nav li:last-child a::after {
 
 .grouped-project ul li {
     display: block;
-    margin: 0.5vh;
+    padding-bottom: 10px;
 }
 
-.collapsible {
+.project-heading {
     background-color: #000000;
     color: #96dfc6;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
-    outline: none;
     font-size: 1em;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .content {
-    display: none;
-    overflow: hidden;
     background-color: #f1f1f1;
-    position: absolute;
     width: 100%;
-    display: none;
-    overflow: hidden;
     background-color: #f1f1f1;
     z-index: 1;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#grouped-projects-container .content ul li::after {
+    content: "•";
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+#grouped-projects-container .content ul li:last-child::after {
+    content: "";
+    display: none;
 }
 
 /* Skills section */
@@ -259,12 +263,61 @@ footer {
 }
 
 /* Landscape Tablet */
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {    
+    /* Projects Section */
+
+    .project-heading {
+        pointer-events: none;
+     }
+
+    .content {
+        display: block !important;
+        position: static;
+    }
     
+    #grouped-projects-container {
+        flex-direction: column;
+    }
+
+    .grouped-project {
+        margin-bottom: 10px;
+    }
 }
 
 /* Portrait tablet styling */
 @media only screen and (max-width: 768px) {
+    /* Header Section */
+    h1 {
+        font-size: 2em;
+    
+    }
+
+    nav ul {
+        margin-left: 0;
+    }
+
+    nav li:not(:last-child) a::after {
+        margin: 0px;
+    }
+    
+    /* About Section */
+    #about {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #about p {
+        width: auto;
+        margin: auto;
+        margin-bottom: 10px;
+    }  
+
+    /* Projects Section */
+    
+    .grouped-project {
+        margin-bottom: 10px;
+    }
     
 }
 
@@ -296,27 +349,6 @@ footer {
         margin: auto;
         margin-bottom: 10px;
     }  
-
-    /* Projects Section */
-
-    .collapsible {
-        pointer-events: none;
-     }
-
-    .content {
-        display: block !important;
-        position: static;
-    }
-    
-    #grouped-projects-container {
-        flex-direction: column;
-    }
-
-    .grouped-project {
-        margin-bottom: 10px;
-    }
-
-      /* Skills Section */
 
     #skills, #projects {
         padding: 10px;
