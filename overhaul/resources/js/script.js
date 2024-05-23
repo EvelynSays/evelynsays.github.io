@@ -34,7 +34,6 @@ for (var linkId in linkToAnimateElementMap) {
 
   link.addEventListener('click', (function(animateElement) {
     return function(event) {
-      event.preventDefault(); // prevent the default action
       animateElement.classList.add('blink');
       setTimeout(function() {
           animateElement.classList.remove('blink');
