@@ -81,6 +81,10 @@ a {
     font-family: 'League Spartan';
 }
 
+button:disabled {
+    cursor: default;
+}
+
 /* Header Section */
 
 header {
@@ -173,13 +177,14 @@ nav li:last-child a::after {
 
 #grouped-projects-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
 .grouped-project {
     flex: 1 0 20%;
     position: relative;
+    padding: 0 2px;
 }
 
 .grouped-project ul li {
